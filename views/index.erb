@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<h1>Conway's Game of Life</h1>
+
+<a href='/go'>next</a> <a href="/">restart</a>
+<table>
+  <% for row in game %>
+      <tr>
+        <% for cell in row %>
+            <td>
+              <% if cell == 0 %>
+                  --
+              <% else %>
+                  O
+              <% end %>
+            </td>
+        <% end %>
+      </tr>
+  <% end %>
+</table>
+</body>
+</html>
