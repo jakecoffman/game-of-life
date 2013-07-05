@@ -73,12 +73,6 @@ class TestGameOfLife < Test::Unit::TestCase
      ], 1, 1, 3))
   end
 
-  def test_randomize
-    game = Array.new(8) { Array.new(8, 0) }
-    result = randomize game, 8
-    assert_not_equal game, result
-  end
-
   def test_tick
     game = [
         [0,1,0],
